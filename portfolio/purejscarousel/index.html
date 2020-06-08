@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+
+    <title>PureJSCarousel</title>
+    <meta name="description" content="Pure JavaScript carousel plugin (touch enabled)">
+    <meta name="author" content="Vadym Shymko">
+    <meta name="google-site-verification" content="1vlwOEhLZFuZiskPKIjNKhXwRPRXpFCyn8yOWFhYqpQ">
+
+
+    <meta property="og:title" content="pureJSCarousel">
+    <meta property="og:description" content="Pure JavaScript carousel plugin (touch enabled)">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ninjadev.pw/portfolio/purejscarousel/">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/purejscarousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1 style="text-align: center;">PureJSCarousel - Pure JavaScript carousel plugin (touch enabled)</h1>
+
+    <section>
+      <h1>Default</h1>
+      <div class="carousel" id="carousel-default">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+        <div class="slide">Slide 4</div>
+        <div class="slide">Slide 5</div>
+        <div class="slide">Slide 6</div>
+        <div class="slide">Slide 7</div>
+        <div class="slide">Slide 8</div>
+        <div class="slide">Slide 9</div>
+        <div class="slide">Slide 10</div>
+        <div class="slide">Slide 11</div>
+        <div class="slide">Slide 12</div>
+        <div class="slide">Slide 13</div>
+        <div class="slide">Slide 14</div>
+        <div class="slide">Slide 15</div>
+        <div class="slide">Slide 16</div>
+        <div class="slide">Slide 17</div>
+        <div class="slide">Slide 18</div>
+      </div>
+      <pre style="width: 400px; margin: 0 auto;">
+        var carouselDefault = new PureJSCarousel({
+          carousel: '#carousel-default',
+          slide: '.slide'
+        });
+      </pre>
+      <div style="margin: 0 0 30px; text-align: center;">
+        <button id="destroy-carousel-default" type="button">Destroy</button>
+        <button id="go-to-carousel-default" type="button">Go to #3</button>
+        <button id="go-to-prev-carousel-default" type="button">Go to prev</button>
+        <button id="go-to-next-carousel-default" type="button">Go to next</button>
+        <button id="disable-control-carousel-default" type="button">Disable Control</button>
+        <button id="enable-control-carousel-default" type="button">Enable Control</button>
+        <button id="start-autoplay-carousel-default" type="button">Start autoplay</button>
+        <button id="stop-autoplay-carousel-default" type="button">Stop autoplay</button>
+      </div>
+    </section>
+
+    <section>
+      <h1>One by one</h1>
+      <div class="carousel" id="carousel-one-by-one">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+        <div class="slide">Slide 4</div>
+        <div class="slide">Slide 5</div>
+        <div class="slide">Slide 6</div>
+        <div class="slide">Slide 7</div>
+        <div class="slide">Slide 8</div>
+        <div class="slide">Slide 9</div>
+        <div class="slide">Slide 10</div>
+        <div class="slide">Slide 11</div>
+        <div class="slide">Slide 12</div>
+        <div class="slide">Slide 13</div>
+        <div class="slide">Slide 14</div>
+        <div class="slide">Slide 15</div>
+        <div class="slide">Slide 16</div>
+        <div class="slide">Slide 17</div>
+        <div class="slide">Slide 18</div>
+      </div>
+      <pre style="width: 400px; margin: 0 auto;">
+        var carouselOneByOne = new PureJSCarousel({
+          carousel: '#carousel-one-by-one',
+          slide: '.slide',
+          oneByOne: true
+        });
+      </pre>
+    </section>
+
+    <section>
+      <h1>One by one (infinite)</h1>
+      <div class="carousel" id="carousel-one-by-one-infinite">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+        <div class="slide">Slide 4</div>
+        <div class="slide">Slide 5</div>
+        <div class="slide">Slide 6</div>
+        <div class="slide">Slide 7</div>
+        <div class="slide">Slide 8</div>
+        <div class="slide">Slide 9</div>
+        <div class="slide">Slide 10</div>
+        <div class="slide">Slide 11</div>
+        <div class="slide">Slide 12</div>
+        <div class="slide">Slide 13</div>
+        <div class="slide">Slide 14</div>
+        <div class="slide">Slide 15</div>
+        <div class="slide">Slide 16</div>
+        <div class="slide">Slide 17</div>
+        <div class="slide">Slide 18</div>
+      </div>
+      <pre style="width: 400px; margin: 0 auto;">
+        var carouselOneByOne = new PureJSCarousel({
+          carousel: '#carousel-one-by-one-infinite',
+          slide: '.slide',
+          oneByOne: true,
+          infinite: true
+        });
+      </pre>
+    </section>
+
+    <section>
+      <h1>Infinite</h1>
+      <div class="carousel" id="carousel-infinite">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+        <div class="slide">Slide 4</div>
+        <div class="slide">Slide 5</div>
+        <div class="slide">Slide 6</div>
+        <div class="slide">Slide 7</div>
+        <div class="slide">Slide 8</div>
+        <div class="slide">Slide 9</div>
+        <div class="slide">Slide 10</div>
+        <div class="slide">Slide 11</div>
+        <div class="slide">Slide 12</div>
+        <div class="slide">Slide 13</div>
+        <div class="slide">Slide 14</div>
+        <div class="slide">Slide 15</div>
+        <div class="slide">Slide 16</div>
+        <div class="slide">Slide 17</div>
+        <div class="slide">Slide 18</div>
+      </div>
+      <pre style="width: 400px; margin: 0 auto;">
+        var carouselInfinite = new PureJSCarousel({
+          carousel: '#carousel-infinite',
+          slide: '.slide',
+          infinite: true
+        });
+      </pre>
+    </section>
+
+    <section>
+      <h1>Autoplay</h1>
+      <div class="carousel" id="carousel-autoplay">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+        <div class="slide">Slide 4</div>
+        <div class="slide">Slide 5</div>
+        <div class="slide">Slide 6</div>
+        <div class="slide">Slide 7</div>
+        <div class="slide">Slide 8</div>
+        <div class="slide">Slide 9</div>
+        <div class="slide">Slide 10</div>
+        <div class="slide">Slide 11</div>
+        <div class="slide">Slide 12</div>
+        <div class="slide">Slide 13</div>
+        <div class="slide">Slide 14</div>
+        <div class="slide">Slide 15</div>
+        <div class="slide">Slide 16</div>
+        <div class="slide">Slide 17</div>
+        <div class="slide">Slide 18</div>
+      </div>
+      <pre style="width: 400px; margin: 0 auto;">
+        var carouselAutoplay = new PureJSCarousel({
+          carousel: '#carousel-autoplay',
+          slide: '.slide',
+          infinite: true,
+          autoplay: true
+        });
+      </pre>
+    </section>
+
+    <script src="js/purejscarousel.js"></script>
+    <script>
+      var carouselDefault = new PureJSCarousel({
+        carousel: '#carousel-default',
+        slide: '.slide'
+      });
+
+      var carouselOneByOne = new PureJSCarousel({
+        carousel: '#carousel-one-by-one',
+        slide: '.slide',
+        oneByOne: true
+      });
+
+      var carouselOneByOne = new PureJSCarousel({
+        carousel: '#carousel-one-by-one-infinite',
+        slide: '.slide',
+        oneByOne: true,
+        infinite: true
+      });
+
+      var carouselInfinite = new PureJSCarousel({
+        carousel: '#carousel-infinite',
+        slide: '.slide',
+        infinite: true
+      });
+
+      var carouselAutoplay = new PureJSCarousel({
+        carousel: '#carousel-autoplay',
+        slide: '.slide',
+        infinite: true,
+        autoplay: true
+      });
+
+      document.getElementById('destroy-carousel-default').onclick = function() {
+        carouselDefault.destroy();
+        // var newSlide = document.createElement('div');
+        // newSlide.className = 'slide';
+        // newSlide.innerHTML = 'Slide 19';
+        // document.getElementById('carousel-default').appendChild(newSlide);
+      };
+
+      document.getElementById('go-to-carousel-default').onclick = function() {
+        carouselDefault.goToSlide(2);
+      };
+
+      document.getElementById('go-to-prev-carousel-default').onclick = function() {
+        carouselDefault.goToPrevSlide();
+      };
+
+      document.getElementById('go-to-next-carousel-default').onclick = function() {
+        carouselDefault.goToNextSlide();
+      };
+
+      document.getElementById('disable-control-carousel-default').onclick = function() {
+        carouselDefault.disableControl();
+      };
+
+      document.getElementById('enable-control-carousel-default').onclick = function() {
+        carouselDefault.enableControl();
+      };
+
+      document.getElementById('start-autoplay-carousel-default').onclick = function() {
+        carouselDefault.startAutoplay('next');
+      };
+
+      document.getElementById('stop-autoplay-carousel-default').onclick = function() {
+        carouselDefault.stopAutoplay();
+      };
+
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-42688866-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

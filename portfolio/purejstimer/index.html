@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+
+    <title>PureJSTimer v1.1</title>
+
+    <meta name="description" content="Pure JavaScript countdown timer v 1.1">
+    <meta name="author" content="Vadym Shymko">
+
+
+    <meta property="og:title" content="PureJSTimer v1.1">
+    <meta property="og:description" content="Pure JavaScript countdown timer v 1.1">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vadymshymko.github.io/portfolio/purejstimer/">
+
+    <style>
+      .pure-js-timer span {
+        display: inline-block;
+      }
+
+      .pure-js-timer-days:after {
+        content: " days:";
+      }
+
+      .pure-js-timer-hours:after {
+        content: " hours:";
+      }
+
+      .pure-js-timer-minutes:after {
+        content: " minutes:";
+      }
+
+      .pure-js-timer-seconds:after {
+        content: " seconds";
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>yearsToEnd: 10</h1>
+      <div id="timer1"></div>
+      <button id="stop1" type="button">stop</button>
+      <button id="start1" type="button">start</button>
+      <button id="destroy1" type="button">Destroy</button>
+    </section>
+    <section>
+      <h1>endDate: 'January 1 2020'</h1>
+      <div id="timer2"></div>
+      <button id="stop2" type="button">stop</button>
+      <button id="start2" type="button">start</button>
+      <button id="destroy2" type="button">Destroy</button>
+    </section>
+
+    <script src="js/purejstimer.js"></script>
+    <script>
+      var timer1 = new PureJSTimer({
+        timer: '#timer1',
+        yearsToEnd: 10,
+        leadingZero: true
+      });
+
+      var timer2 = new PureJSTimer({
+        timer: '#timer2',
+        endDate: 'January 1 2020'
+      });
+
+      document.getElementById('stop1').onclick = function() {
+        timer1.stop();
+      };
+      document.getElementById('start1').onclick = function() {
+        timer1.start();
+      };
+      document.getElementById('destroy1').onclick = function() {
+        timer1.destroy();
+      };
+      document.getElementById('stop2').onclick = function() {
+        timer2.stop();
+      };
+      document.getElementById('start2').onclick = function() {
+        timer2.start();
+      };
+      document.getElementById('destroy2').onclick = function() {
+        timer2.destroy();
+      };
+    </script>
+  </body>
+</html>
